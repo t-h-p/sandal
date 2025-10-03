@@ -1,1 +1,5 @@
-Work in progress, very little done so far. Use `cabal run` to try.
+# sandal / graph my file system
+
+Create graph for subset of filesystem using GraphViz.
+
+run with: cabal run -- {TARGET_DIRECTORY} -o {OUTPUT_FILE}
