@@ -1,11 +1,10 @@
-module Main ( main ) where
+module Main (main) where
 
-import FileTree
 import Graphing
-import Data.GraphViz.Printing (renderDot)
+import Settings ( getSettings )
 
 main :: IO ()
 main = do
-    _ <- saveDotGraph "." "output.png"
-    putStrLn "ran successfully :)"
-
+  settings <- getSettings
+  _ <- saveDotGraph "." "output.png"
+  putStrLn "ran successfully :)"
