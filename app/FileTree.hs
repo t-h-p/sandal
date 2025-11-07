@@ -21,8 +21,8 @@ data FsNode
   | FileNode String
 
 instance Show FsNode where
-  show (DirNode name) = name
-  show (FileNode name) = name
+  show (DirNode name) = "DirNode (" ++ name ++ ")"
+  show (FileNode name) = "FileNode (" ++ name ++ ")"
 
 fsNodeToLNode :: Int -> FsNode -> LNode String
 fsNodeToLNode nodeId (DirNode name) = (nodeId, name)
