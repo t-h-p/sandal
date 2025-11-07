@@ -3,7 +3,7 @@ A tool to graph your filesystem on Unix-like systems.
 Successfully built on MacOS and OpenSUSE in the past.
 
 Example output:
-![Graph of source tree](./output.png)
+![Graph of source tree](./example.png)
 
 Simple usage example: 
 ```
